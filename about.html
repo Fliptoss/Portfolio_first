@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <style>
+        /*css*/
+        body {
+          margin: 0;
+        }
+        section {
+          padding: 30px 15%;
+        }
+  
+        @media (width <=720px) {
+          section {
+            padding: 30px 10%;
+          }
+        }
+        .container .text-center .row img {
+          position: relative;
+          display: flex;
+          align-items: center;
+          gap: 50px;
+          justify-content: space-between;
+          padding-top: 100px;
+          padding-bottom: 100px;
+          min-height: 40vw;
+          margin-bottom: 40px;
+        }
+  
+        @keyframes morph {
+          0%,
+          100% {
+            border-radius: 40% 60% 70% 30%/ 40% 40% 60% 50%;
+          }
+          34% {
+            border-radius: 70% 30% 50% 50% / 30% 30% 70% 70%;
+          }
+  
+          67% {
+            border-radius: 100% 60% 60% 100% / 100% 100% 60% 60%;
+          }
+        }
+  
+        .container .text-center .row img {
+          width: 220px;
+          height: 220px;
+          object-fit: cover;
+          animation: morph 3.5s linear infinite;
+        }
+      </style>
+
+    <title>Document</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-light fixed-top navbarScroll">
+      <div class="container">
+        <a class="navbar-brand" href="#">Riptide</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+              <!-- <a href="about.html">About me</a> -->
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="service.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="portfolio.html">Portfolio</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <h1 class="title">Sameer Mahmud</h1>
+    <span class="tagline">Programmer &amp; Gamer</span>
+
+
+
+    <section id="about">
+        <div class="container lg-4 mt-4">
+            <h1 class="text-center">About Me</h1>
+            <div class="row mt-4">
+                <div class="col-lg-4">
+                    <img src="./img/avatar.jpg" class= "img-fluid" alt="">
+                </div>
+
+                <div class="col-lg-8">
+                    <p> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged
+                        
+                    </p>
+
+                    <div class="row mt-3">
+                        <p> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                        </p>
+                    </div>
+                </div>
+            </div>
+          </div>
+    </section>
+
+    
+    <!-- footer -->
+    <footer>
+      <p id="foot">
+       &copy; 2021, Made with ❤ by
+        <a id="fot" href="https://github.com/Fliptoss" target="_blank"
+       >Sameer Mahmud, Riptide
+       </a>
+     </p>
+     </footer>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
