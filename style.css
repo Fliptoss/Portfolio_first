@@ -1,0 +1,144 @@
+.bgimage {
+    height:100vh;
+    background: url(../img/wallpaper.jpg);
+    background-size:cover;
+    position:relative;
+}
+
+.bgimage2 {
+    height:100vh;
+    background: url(../img/bb.jpg);
+    background-size:cover;
+    position:relative;
+}
+/* text css above hero image*/
+.hero_title {
+    font-size: 4.5rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.hero_desc {
+    /* font-size: 2rem; */
+    text-align: center;
+    text-transform: uppercase;
+    display: block;
+    letter-spacing: .3em;
+    margin: 10px 0 40px;
+    color: #aaa;
+}
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+/* about section image css */
+.imageAboutPage {
+    width: 100%;
+}
+
+h1{
+    text-align: center;
+    padding: 1px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* services section css */
+.servicesText.card {
+    height: 280px;
+    cursor: pointer;
+    box-shadow: black;
+  }
+.servicesIcon {
+    font-size: 36px;
+    text-align: center;
+    width: 100%;
+}
+.card-title {
+    text-align: center;
+}
+.card:hover .servicesIcon {
+    color: #008000;
+}
+.servicesText:hover {
+    border: 1px solid #008000;
+}
+
+.navbarScroll.navbarDark {
+    background-color: black;
+}
+
+
+@keyframes morph {
+    0%,
+    100% {
+      border-radius: 40% 60% 70% 30%/ 40% 40% 60% 50%;
+    }
+    34% {
+      border-radius: 70% 30% 50% 50% / 30% 30% 70% 70%;
+    }
+  
+    67% {
+      border-radius: 100% 60% 60% 100% / 100% 100% 60% 60%;
+    }
+  }
+ .container .text-center .row .col img .imageAboutPage{ 
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    animation: morph 3.5s linear infinite;
+  }
+
+.title{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 5em;
+    letter-spacing: .085em;
+    margin: 4.5em 0 1rem;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+
+.tagline{
+    text-align: center;
+    text-transform: uppercase;
+    display: block;
+    letter-spacing: .3em;
+    margin: 10px 0 40px;
+    color: #aaa;
+}
+
+.our-services{
+    text-align: center;
+    text-transform: uppercase;
+    display: block;
+    letter-spacing: .3em;
+    margin: 10px 0 40px;
+    color: #aaa;
+}
+
+
+footer {
+    font-weight: 300;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2rem;
+    background: #0c344e;
+    border-top: 4px solid #bfc8ea;
+  }
+  #foot {
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+  }
+  #fot {
+    margin-left: -0.1rem;
+    color: #ff9f5c;
+    font-family: "Poppins", sans-serif;
+  }
+  #fot:hover {
+    color: #f31702;
+  }
